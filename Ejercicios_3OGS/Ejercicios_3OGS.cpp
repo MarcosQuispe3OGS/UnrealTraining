@@ -31,6 +31,9 @@ void ElegirEjercicio() {
 	case 3:
 		Ejercicio3();
 		break;
+	case 4:
+		Ejercicio4();
+		break;
 	default:
 		Inicializacion();
 		break;
@@ -110,6 +113,33 @@ void TieneNumeroPar() {
 
 void CantidadDePasajeros() {
 	CantidadPasajeros = Valor * PersonasPorTren;
+}
+
+#pragma endregion
+
+
+#pragma region Ejercicio4
+
+//4. En el sistema interno de un juego de estrategia, se genera un número entero positivo que se usa para determinar el camino que tomara una IA.
+//Debemos indicar si el número ingresado es par, ya que de serlo la IA tomara una acción diferente a la estipulada de forma convencional.
+
+void Ejercicio4() {
+	cout << "Ejercicio 4" << endl;
+	IngresarNumero();
+	CalcularNumeroPar();
+}
+
+void CalcularNumeroPar() {
+	if ((int)ValorEjercicio % 2 == 0) cout << "Tiene un valor par." << endl;
+	else cout << "Tiene un valor impar." << endl;
+}
+
+void IngresarNumero() {
+	do
+	{
+		cout << "Ingresa un entero y positivo: ";
+		cin >> ValorEjercicio;
+	} while ((ValorEjercicio < 0) || (ValorEjercicio - (int)ValorEjercicio > 0));
 }
 
 #pragma endregion

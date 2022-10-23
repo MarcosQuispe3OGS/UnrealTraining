@@ -3,6 +3,7 @@
 #include <string>
 
 int Valor;
+float ValorEjercicio;
 int Numero;
 void CargarDatos(string Texto);
 void Inicializacion();
@@ -33,4 +34,13 @@ int PersonasPorTren = 50;
 void Ejercicio3();
 void TieneNumeroPar();
 void CantidadDePasajeros();
+#pragma endregion
+
+
+#pragma region Ejercicio4
+
+void Ejercicio4();
+void IngresarNumero();
+void CalcularNumeroPar();
+
 #pragma endregion

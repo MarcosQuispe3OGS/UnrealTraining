@@ -61,6 +61,9 @@ void ElegirEjercicio() {
 	case 14:
 		Ejercicio14();
 		break;
+	case 15:
+		Ejercicio15();
+		break;
 	default:
 		Inicializacion();
 		break;
